@@ -1,0 +1,69 @@
+package ex1;
+
+import javax.swing.Box;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Utilities {
+
+	
+	
+	
+	public static double circleArea(double radius){ return Math.PI*radius*radius; }
+
+	public static double circleCircumference(double radius){ return 2*Math.PI*radius; }
+	
+	public static double triangleArea(double base, double height){ return 0.5*base*height;}
+	
+	public static double triangleSideLength(double side1, double side2, double side3){ return (side1 + side2 + side3); }
+	
+	public static double squareArea(double squareSide){ return squareSide*squareSide; }
+	
+	public static double squareSideLength(double squareSide){ return 4*squareSide; }
+	
+	public static double getDouble(String str){ return Double.parseDouble(str); }
+	
+	public static double getInt(String str){ return Integer.parseInt(str); }
+	
+	public static String getUserInput(String choiceMenuHeader, String menuMessage, String...strings){
+		String[] inputChoices = null;
+		
+		
+		
+	    String finalChoice = (String) JOptionPane.showInputDialog(null, choiceMenuHeader, menuMessage,
+	    JOptionPane.QUESTION_MESSAGE, null, inputChoices, inputChoices[0]);
+		return finalChoice;
+	}
+	
+	public static int[] getNumbers(){
+			JTextField inputNumber1 = new JTextField(10);
+			JTextField inputNumber2 = new JTextField(10);
+			
+		    JPanel myPanel = new JPanel();
+		    myPanel.add(new JLabel("Number 1:"));
+		    myPanel.add(inputNumber1);
+		    myPanel.add(Box.createHorizontalStrut(15)); // a spacer
+		    myPanel.add(new JLabel("Number 2:"));
+		    myPanel.add(inputNumber2);
+
+		    int result = JOptionPane.showConfirmDialog(null, myPanel, 
+		             "Please Enter Number Values", JOptionPane.OK_CANCEL_OPTION);
+		    if (result == JOptionPane.OK_OPTION) {
+		         System.out.println("Number 1: " + inputNumber1.getText());
+		         System.out.println("Number 2: " + inputNumber2.getText());
+		      }
+		    int intValue1 = Integer.parseInt(inputNumber1.getText());
+		    int intValue2 = Integer.parseInt(inputNumber2.getText());
+		    
+		    
+		    int[] intArray = {intValue1, intValue2};
+		    return intArray;
+			
+			
+		
+	}
+	
+	
+}

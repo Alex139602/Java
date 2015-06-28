@@ -1,0 +1,20 @@
+package ex1;
+
+import ex1.Utilities;
+
+public class Gallons {
+	
+	public static int gallons = 4;
+	public static int pints = 4;
+
+	public static void main(String[] args){
+		String result = Utilities.getUserInputWindow("Choice of operation", "Please choose an operation", "Add weight", "Subtract weight", "Display Weight");
+		if( result == "Add weight"){
+			Utilities.createOneJTextField();
+		} 
+	} // end of main method
+}
+
+
+
+

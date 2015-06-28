@@ -1,0 +1,12 @@
+package ex1;
+
+public class Shapes {
+
+	public static void main(String[] args){
+		String result = Utilities.getUserInputWindow("Shape Choice:", "Please choose a shape", "Circle", "Square", "Triangle");
+		System.out.println(result);
+		if(result == "Circle"){
+			
+		}
+	} // end of main method
+}

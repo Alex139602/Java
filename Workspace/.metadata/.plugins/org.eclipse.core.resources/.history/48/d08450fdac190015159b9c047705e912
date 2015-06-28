@@ -1,0 +1,32 @@
+package Solution;
+
+import java.util.jar.JarOutputStream;
+
+import javax.swing.JOptionPane;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {		
+		
+		//JOptionPane.showMessageDialog(null, getValue());
+		showName(JOptionPane.showInputDialog("Please enter your name:"));
+	} // End of main method
+	
+	public static String getName(){
+		String name = JOptionPane.showInputDialog("What is your name?");
+		return name;
+	}
+	
+	public static int getValue(){
+		String value = JOptionPane.showInputDialog("Hello, " + getName() + ", Please input a number to double:");
+		int _value = Integer.parseInt(value);
+		return 2*_value;
+	}
+	
+	public static String showName(String name) {
+		JOptionPane.showMessageDialog(null, name);
+		return name;
+	}
+	
+
+} //End of Class

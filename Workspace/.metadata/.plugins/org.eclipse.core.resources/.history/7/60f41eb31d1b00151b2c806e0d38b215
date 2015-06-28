@@ -1,0 +1,25 @@
+package ex1;
+
+public class Shapes {
+
+	public static void main(String[] args){
+		//TODO: Write Code
+	}
+	
+	
+	public static double circleArea(double radius){ return Math.PI*radius*radius; }
+
+	public static double circleCircumference(double radius){ return 2*Math.PI*radius; }
+	
+	public static double triangleArea(double base, double height){ return 0.5*base*height;}
+	
+	public static double triangleSideLength(double side1, double side2, double side3){ return (side1 + side2 + side3); }
+	
+	public static double squareArea(double squareSide){ return squareSide*squareSide; }
+	
+	public static double squareSideLength(double squareSide){ return 4*squareSide; }
+	
+	public static double strToDouble(String str){ return Double.parseDouble(str); }
+	
+	
+}

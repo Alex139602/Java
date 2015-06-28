@@ -1,0 +1,11 @@
+package ex1;
+
+public class Shapes {
+
+	public static void main(String[] args){
+		String result = Utilities.getUserInputWindow("Shape Choice:", "Please choose a shape", "Circle", "Square", "Triangle");
+		if(result == "Circle"){
+			String radius = Utilities.getInput("Please Choose a Radius");
+		}
+	} // end of main method
+}

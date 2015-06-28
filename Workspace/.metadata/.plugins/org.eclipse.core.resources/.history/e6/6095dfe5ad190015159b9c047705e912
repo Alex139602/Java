@@ -1,0 +1,30 @@
+package Solution;
+
+import javax.swing.JOptionPane;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {		
+		
+		//JOptionPane.showMessageDialog(null, getValue());
+		showName(JOptionPane.showInputDialog("Please enter your name:"));
+	} // End of main method
+	
+	public static String getName(){
+		String name = JOptionPane.showInputDialog("What is your name?");
+		return name;
+	}
+	
+	public static int getValue(){
+		String inputNumber = JOptionPane.showInputDialog("Hello " + getName() + ", Please input a number to square:");
+		int _value = Integer.parseInt(inputNumber);
+		return _value*_value;
+	}
+	
+	public static String showName(String name) {
+		JOptionPane.showMessageDialog(null, name);
+		return name;
+	}
+	
+
+} //End of Class
