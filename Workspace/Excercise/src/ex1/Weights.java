@@ -14,17 +14,15 @@ public class Weights {
 		if( result == "Add weight"){
 			//String radius = Utilities.getInput("Please Choose a Radius for your circle:");
 			Utilities.createOneJTextField();
-			double[] array = Utilities.variableJTextFieldBoxes("Number", 4, 3, 10);
+			double[] array = Utilities.variableJTextFieldBoxesAsDblArray("Value", 4, 6, 10);
 			System.out.println(Arrays.toString(array));
 		} 
+		
 		
 
 		
 		
 	} // end of main method
-	
-	
-	
 	
 	public static void setWeight(int g, int p){
 		gallons = g;

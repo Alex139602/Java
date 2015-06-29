@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 14 resources" deleteContents="false" description="Delete 14 resources" element1="/02_Java_Basics" element10="/11_Types_Misc" element11="/12_Collections_Generics" element12="/13_Intro_To_Testing" element13="/14_Working_With_Files" element14="/50_CodingPractices" element2="/03_Introduction_to_Methods" element3="/04_GettingStartedWithConditionals" element4="/05_MoreConditionals" element5="/06_Loops" element6="/07_Arrays" element7="/08_Types_GettingStarted" element8="/09_Types_Fields_Methods" element9="/10_Types_MoreOnMethods" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="14" stamp="1435534951502"/>
+</session>

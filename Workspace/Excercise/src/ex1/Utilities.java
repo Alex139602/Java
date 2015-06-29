@@ -1,7 +1,5 @@
 package ex1;
 
-import java.util.Arrays;
-
 import javax.swing.Box;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -37,12 +35,10 @@ public class Utilities {
 		return finalChoice;
 	}
 	
-	public static double[] returnTwoJTextFields(int numberOfBoxes){
+	public static double[] returnTwoJTextFields(){
 		JTextField leftInput = new JTextField(6);
 		JTextField rightInput = new JTextField(6);
-		for(int i = 0; i == numberOfBoxes; i++){
-			
-		}
+		
 		JPanel myPanel = new JPanel();
 		myPanel.add(new JLabel("Number 1:"));
 		myPanel.add(leftInput);
@@ -75,24 +71,32 @@ public class Utilities {
 		
 	}
 		
-	public static double[] variableJTextFieldBoxes(String nameOfInputs, int numberOfBoxes, int JTextFieldSize, int boxSeparatorSize){
+	public static double[] variableJTextFieldBoxesAsDblArray(String startNameOfInputs, int numberOfBoxes, int JTextFieldSize, int boxSeparatorSize){
 		double[] dblArray = new double[numberOfBoxes];
 		String[] elementName = new String[numberOfBoxes];
+		JTextField[] JTArray = new JTextField[numberOfBoxes];
 		JPanel myPanel = new JPanel();
 		for(int i = 0; i < numberOfBoxes; i++ ){
 		dblArray[i] = i;
-		elementName[i] = nameOfInputs + " " + Integer.toString(i) + ":";
-		
-		JTextField JTextName = new JTextField(JTextFieldSize);
+		elementName[i] = startNameOfInputs + " " + Integer.toString(i) + ":";
+		JTArray[i] = new JTextField(JTextFieldSize);
 		myPanel.add(new JLabel(elementName[i]));
+		myPanel.add(JTArray[i]);
 		myPanel.add(Box.createHorizontalStrut(boxSeparatorSize)); // a spacer
+		//System.out.println(elementName[i]);
+		}
+
 		int result = JOptionPane.showConfirmDialog(null, myPanel, "Please Enter Values", JOptionPane.OK_CANCEL_OPTION);
 		
 		if (result == JOptionPane.OK_OPTION) {
-			System.out.println(JTextName.toString());
-		}
+			System.out.println("OK_PRESSED");
+			for (int i = 0; i < numberOfBoxes; i++){
+				System.out.println(JTArray[i].getText());
+				dblArray[i] = Double.parseDouble(JTArray[i].getText()); // parse the double and then initialise it to the array element
+				
+			}
+		} else { Utilities.showMsg("User Cancelled Operation");	}
 		
-		}
 		
 		return dblArray;
 	}
@@ -111,7 +115,8 @@ public class Utilities {
 			for(int i = 0; i < dblArray.length; i++){
 				arraySum += dblArray[i];
 			}
-		} 
+		} else { Utilities.showMsg("Error! double array length <= 0"); }
+		
 		return arraySum;
 	}
 	
