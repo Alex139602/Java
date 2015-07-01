@@ -18,7 +18,7 @@ public class Shapes {
 			Utilities.showMsg("Your triangle side lengths are: " + trSideLengths + "\nYour triangle perimeter is: " + trPerimeter);
 		} else if ( result == "Triangle (Area)"){
 			Utilities.showMsg("Please input values of your triangle base and height");
-			double[] dArr = Utilities.returnTwoJTextFields("Triangle Base: ", "Triangle Height: ");
+			double[] dArr = Utilities.dbl_returnTwoJTextFields("Triangle Base: ", "Triangle Height: ");
 			double base = dArr[1];
 			double height = dArr[2];
 			Utilities.triangleArea(base, height);

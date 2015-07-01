@@ -1,5 +1,11 @@
 package ex1;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.LineNumberReader;
+
 import javax.swing.Box;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -7,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Utilities {
-
+	
 
 	public static double circleArea(double radius){ return Math.PI*radius*radius; }
 
@@ -140,7 +146,7 @@ public class Utilities {
 		if (result == JOptionPane.OK_OPTION) {
 			System.out.println("OK_PRESSED");
 			for (int i = 0; i < numberOfBoxes; i++){
-				System.out.println(JTArray[i].getText());
+				//System.out.println(JTArray[i].getText());
 				intArray[i] = Integer.parseInt(JTArray[i].getText()); // parse the double and then initialise it to the array element
 			}
 		} else { Utilities.showMsg("User Cancelled Operation");	}
@@ -209,40 +215,32 @@ public class Utilities {
 		JOptionPane.showMessageDialog(null, msg); 
 	}
 	
-	public static int gallonsToPints(int gallons){
-		JOptionPane.showMessageDialog(null, gallons*8);
-		return gallons*8;
-	}
-	
-	public static void pintsToGallons(int pints){
-		JOptionPane.showMessageDialog(null, (int) Math.floor(pints/8)); 
-	}
-	
-	public static void setWeight(int g, int p){
-		if (validateWeight(g, p) == true){
-			gallons = g;	
-			pints = p;
-		} else if (validateWeight(g, p) == false){
-			if ( g < 0 ){ Utilities.showMsg("Not a valid gallon Weight input, g is less than zero"); }
-			if ( p < 0 ){ Utilities.showMsg("Not a valid gallon weight input, p is less than zero");}
+	public static void setWeight(int yrd, int ft, int inc){
+		if ( validateLength(yrd, ft, inc) == true ){
+		} else if (validateLength(yrd, ft, inc) == false ){
+			if ( yrd < 0 ){ Utilities.showMsg("Not a valid yard length input, g is less than zero"); }
+			if ( ft < 0 ){ Utilities.showMsg("Not a valid feet length input, p is less than zero");}
+			if ( inc < 0 ){ Utilities.showMsg("Not a valid gallon weight input, p is less than zero");}
 			else {	
-				int[] gall_pint = remainderChanges(g, p);
-				gallons = gall_pint[0];
-				pints = gall_pint[1];
+				@SuppressWarnings("unused")
+				int[] yrd_ft_inc = remainderChanges(yrd, ft, inc);
+				
 			}
 			
 		} else { System.out.println("BOOL ERROR");}
 	}
 	
-	public static void addWeight(int g, int p){
-		if (validateWeight(g, p) == true){
-			gallons += g;	
-			pints += p;
-		} else if (validateWeight(g, p) == false){
-			int[] gall_pint = remainderChanges(g, p);
-			gallons += gall_pint[0];
-			pints += gall_pint[1];
-		} else { Utilities.showMsg("ERROR 111"); }
+	public static void addWeight(int yrd, int ft, int inc){
+		if (validateLength(yrd, ft, inc) == true ) {
+			// TODO Some code here...
+		} else if (validateLength(yrd, ft, inc) == false){
+			@SuppressWarnings("unused")
+			int[] yrd_ft_inc = remainderChanges(yrd, ft, inc);
+			// TODO work out remainder..
+			
+		} else { 
+			Utilities.showMsg("ERROR 111"); 
+		}
 	}
 	
 	/*public static void subtractWeight(int g, int p){
@@ -270,31 +268,75 @@ public class Utilities {
 	}
 	 */
 	
-	public static void displayWeight(){ 
-		Utilities.showMsg("Total Gallons: " + gallons +"\nTotal Pints: " + pints); 
-		
-	}
-	
-	public static boolean validateWeight( int yrd, int ft, int inc ){
-		if ( yrd >= 0 && (ft >= 0 && ft < 4) && (inc >= 0 && inc < 13)){
-			return true; 
-		} else { 
-			return false;
+	public static void displayLength(){
+		if( Lengths.yards != 0 && Lengths.feet != 0 && Lengths.inches != 0){
+			Utilities.showMsg("Total Yards: " + Lengths.yards + "\nTotal Feet: " + Lengths.feet + "\nTotal Inches: " + Lengths.inches); 
 		}
 	}
 	
-	public static int[] remainderChanges(int yrd, int ft, int inc){
+	public static boolean validateLength( int yrd, int ft, int inc ){
+		if ( yrd >= 0 && (ft >= 0 && ft < 3) && (inc >= 0 && inc < 13)) { return true; } 
+		else { return false; }
+	}
+	
+	public static int[] remainderChanges(int yrd, int ft, int inch){
 		int yrdNew = 0;
-		int ftNew = 0;
-		int totalInchesNew = (yrd*36 + ft*12 + inc);
-		if( yrd >= 0 && ft >= 0 &&  inc >= 0 ){
-			yrdNew = totalInchesNew % 36; 
-		} else { 
-			Utilities.showMsg("Undefined limit values");
-		}
-		int[] intArray = new int[]{yrdNew, ftNew, totalInchesNew};
+		int totalInchesLeft = 0;
+		int totalFeetLeft = 0;
+		int totalInchesNew = (yrd*36 + ft*12 + inch);
+		if( yrd >= 0 && ft >= 0 && inch >= 0 ){
+			int inchRemainder = totalInchesNew % 36;
+			yrdNew += (totalInchesNew - inchRemainder)/36;
+			//int feetRemainder = (); 
+			//totalFeetLeft += ()/12;
+			//System.out.println(yrdNew);
+			System.out.println(inchRemainder);
+		} else { Utilities.showMsg("ERROR! invalid input values");}
+		int[] intArray = new int[]{yrdNew, totalFeetLeft, totalInchesLeft};
 		return intArray;
-		
 	}
+	
+	public static int showOption(String inputHeader, String inputText, String... optionChoices){ 
+		//Object[] options = new Object[]{optionChoices};
+		int val  = JOptionPane.showOptionDialog(null, inputText, inputHeader, JOptionPane.YES_NO_CANCEL_OPTION, 
+													JOptionPane.PLAIN_MESSAGE, null, optionChoices, optionChoices[0]);
+		return val;
+	}
+	
+
+	 public static String[] readLinesFromFilesAsArray(String filePath, int numOfLines) throws IOException{
+		 	String[] Array = new String[numOfLines];
+			FileReader fr = new FileReader(filePath);
+			BufferedReader br = new BufferedReader(fr);
+			String text = "";
+			try {
+				String line = br.readLine();
+				for (int i = 0; i < numOfLines; i++) {
+					text = text + line + "\n";
+					Array[i] = line;
+					line = br.readLine();
+				}
+				
+			} finally {
+				br.close();
+			}
+			System.out.println(text);
+			return Array;
+	}
+	 
+	 public static int getLineCount(String filePath) throws FileNotFoundException, IOException{
+		 int lineCount = 0;
+		 FileReader fr = new FileReader(filePath);
+		 LineNumberReader lnr = new LineNumberReader(fr);
+		 try {
+			 lnr.skip(Long.MAX_VALUE);
+			 lineCount += lnr.getLineNumber() + 1;
+		} finally {
+			lnr.close();
+		}
+		 
+		 return lineCount;
+	 }
+		 
 
 }
