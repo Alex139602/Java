@@ -1,0 +1,13 @@
+package ex1;
+
+public class Test {
+
+	
+	public static void main(String[] args){
+		int g1 = 0;
+		int p1 = 7;
+		Weights.remainderChanges(g1, p1);
+		
+		
+	}
+}

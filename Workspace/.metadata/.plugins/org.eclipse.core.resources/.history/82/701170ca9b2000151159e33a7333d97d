@@ -1,0 +1,26 @@
+package ex1;
+
+import java.io.*;
+
+public class WriteToFile {
+
+	public static void main(String[] args) throws IOException {
+		
+		writeToFile();
+		
+	} // end of main
+
+	private static void writeToFile() throws IOException {
+		try {
+			
+		} catch ( IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	
+	
+
+} // end of class

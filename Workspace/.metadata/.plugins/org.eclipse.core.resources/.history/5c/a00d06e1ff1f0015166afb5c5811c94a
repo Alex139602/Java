@@ -1,0 +1,14 @@
+package ex1;
+
+import java.io.IOException;
+import java.util.Arrays;
+
+public class ModifiableQuiz {
+
+	public static void main(String[] args) throws IOException{
+		String filepath1 = "C:/Games/CapitalQuestions.txt";
+		String[] sA = Utilities.readLinesFromFilesAsArray(filepath1, Utilities.getLineCount(filepath1));
+		System.out.println(Arrays.toString(sA));
+	 }
+	
+}

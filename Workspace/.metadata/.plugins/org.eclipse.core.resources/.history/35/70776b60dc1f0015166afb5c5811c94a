@@ -1,0 +1,100 @@
+package ex1;
+
+public class Quiz {
+	public static void main(String[] args){
+		
+		citiesQuiz();
+	} // end of main
+	
+	
+	public static int citiesQuiz() {
+		String[] cities = new String[]{"France?","England?", "Holland?", "Germany?", "Sweden?" };
+		String[] capitals = new String[]{"Paris", "London", "Amsterdam", "Berlin", "Stockholm" };
+		String[] question = new String[cities.length];
+		int score = 0;
+		for (int i = 0; i < question.length; i++) {
+			question[i] = "What is the capital of " + cities[i];
+		}
+		String userInput;
+		for (int i = 0; i < question.length; i++) {
+			userInput = Utilities.getInput(question[i]);
+			if (userInput.equalsIgnoreCase(capitals[i])) {
+				score++;
+			}
+		}
+		Utilities.showMsg("Your score is: " + score + " out of " + 5);
+		return score;
+	}
+	
+	public static int mathQuiz() {
+		String[] cities = new String[]{"France?","England?", "Holland?", "Germany?", "Sweden?" };
+		String[] capitals = new String[]{"Paris", "London", "Amsterdam", "Berlin", "Stockholm" };
+		String[] question = new String[cities.length];
+		int score = 0;
+		for (int i = 0; i < question.length; i++) {
+			question[i] = "What is the capital of " + cities[i];
+		}
+		String userInput;
+		for (int i = 0; i < question.length; i++) {
+			userInput = Utilities.getInput(question[i]);
+			if (userInput.equalsIgnoreCase(capitals[i])) {
+				score++;
+			}
+		}
+		Utilities.showMsg("Your score is: " + score + " out of " + 5);
+		return score;
+	}
+	
+	public static int filmQuiz() {
+		String[] cities = new String[]{"France?","England?", "Holland?", "Germany?", "Sweden?" };
+		String[] capitals = new String[]{"Paris", "London", "Amsterdam", "Berlin", "Stockholm" };
+		String[] question = new String[cities.length];
+		int score = 0;
+		for (int i = 0; i < question.length; i++) {
+			question[i] = "What is the capital of " + cities[i];
+		}
+		String userInput;
+		for (int i = 0; i < question.length; i++) {
+			userInput = Utilities.getInput(question[i]);
+			if (userInput.equalsIgnoreCase(capitals[i])) {
+				score++;
+			}
+		}
+		Utilities.showMsg("Your score is: " + score + " out of " + 5);
+		return score;
+	}
+	
+	public static int generalKnowledge() {
+		String[] cities = new String[]{"France?","England?", "Holland?", "Germany?", "Sweden?" };
+		String[] capitals = new String[]{"Paris", "London", "Amsterdam", "Berlin", "Stockholm" };
+		String[] question = new String[cities.length];
+		int score = 0;
+		for (int i = 0; i < question.length; i++) {
+			question[i] = "What is the capital of " + cities[i];
+		}
+		String userInput;
+		for (int i = 0; i < question.length; i++) {
+			userInput = Utilities.getInput(question[i]);
+			if (userInput.equalsIgnoreCase(capitals[i])) {
+				score++;
+			}
+		}
+		Utilities.showMsg("Your score is: " + score + " out of " + 5);
+		return score;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+} // end of class

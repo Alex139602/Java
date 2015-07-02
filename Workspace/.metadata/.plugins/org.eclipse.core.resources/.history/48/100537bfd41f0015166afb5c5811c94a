@@ -1,0 +1,37 @@
+package ex1;
+
+public class Arrays {
+	public static void main(String[] args){
+		
+		
+		
+	} // end of main
+	
+	
+	public static String[] returnQuestion() {
+		String[] cities = new String[]{"France","England", "Holland",   };
+		String[] capitals = new String[]{"Paris", "London", "Amsterdam", "Berlin", "Stockholm"};
+		String[] question = new String[cities.length];
+		
+		
+		
+		
+		return arr;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+} // end of class

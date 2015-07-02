@@ -1,0 +1,27 @@
+package ex1;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ModifiableQuiz {
+
+	public static void main(String[] args) throws IOException{
+		
+		FileReader fr = new FileReader("C:\\Games\\CapitalQuestions.txt");
+		BufferedReader br = new BufferedReader(fr);
+		
+		String text = "";
+		
+		int numberOfLines = 5;
+		try {
+			for (int i = 0; i < numberOfLines; i++) {
+				text = text + "\n" + br.readLine();
+			}
+		} finally {
+			br.close();
+		}
+		System.out.println(text);
+	}
+	
+}

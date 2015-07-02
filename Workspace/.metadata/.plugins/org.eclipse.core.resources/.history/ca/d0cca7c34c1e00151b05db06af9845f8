@@ -1,0 +1,15 @@
+package ex1;
+
+import java.util.Arrays;
+
+public class Test {
+
+	
+	public static void main(String[] args){
+		int g1 = 12;
+		int p1 = 16;
+		System.out.println(Arrays.toString(Weights.remainderChanges(g1, p1)));
+		
+		
+	}
+}

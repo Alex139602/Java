@@ -1,0 +1,44 @@
+package ex1;
+
+public class Arrays {
+	public static void main(String[] args){
+		
+		returnQuestion();
+		
+	} // end of main
+	
+	
+	public static int returnQuestion() {
+		String[] cities = new String[]{"France?","England?", "Holland?", "Germany?", "Sweden?" };
+		String[] capitals = new String[]{"Paris", "London", "Amsterdam", "Berlin", "Stockholm" };
+		String[] question = new String[cities.length];
+		int score = 0;
+		for (int i = 0; i < question.length; i++) {
+			question[i] = "What is the capital of" + cities[i];
+		}
+		String userInput;
+		for (int i = 0; i < question.length; i++) {
+			userInput = Utilities.getInput(question[i]);
+			if (userInput.equalsIgnoreCase(capitals[i])) {
+				score++;
+			}
+		}
+		return score;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+} // end of class
