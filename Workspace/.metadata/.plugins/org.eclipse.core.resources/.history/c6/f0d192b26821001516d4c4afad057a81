@@ -1,0 +1,28 @@
+package ex1;
+
+public class Car {
+
+	double engineSize;
+	int chassisNumber;
+	String make;
+	String model;
+	String color;
+	
+	// each class has a public method called constructor which is named with the class name.
+	
+	public Car() {
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+} // end of class

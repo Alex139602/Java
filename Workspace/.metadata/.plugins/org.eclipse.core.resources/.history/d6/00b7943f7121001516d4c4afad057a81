@@ -1,0 +1,16 @@
+package ex1;
+
+import ex1.Car;
+
+public class MakeCars {
+
+	public static void main(String[] args) {
+		
+		Car bmw = new Car("red", "bmw", "m3", 4);
+		String bminf = bmw.toString();
+		System.out.println(bminf);
+		System.out.println(
+
+	}
+
+}

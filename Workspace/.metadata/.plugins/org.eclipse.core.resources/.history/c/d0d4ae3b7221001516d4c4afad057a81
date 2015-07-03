@@ -1,0 +1,47 @@
+package ex1;
+
+public class Car extends Object {
+
+	//double engineSize;
+	//int chassisNumber;
+	private String color;
+	private String make;
+	private String model;
+	private int age; 
+	
+	// each class has a public method called constructor which is named with the class name.
+	
+	public Car(String c, String ma, String mo, int a) {
+		color = c;
+		make = ma;
+		model = mo;
+		age = a;
+	}
+
+	public String toString() {
+		return "Color: " + color + "\nMake: " + make + "\nModel: " + model + "\nAge: " + age;
+	}
+
+	public void setColor(String c){
+		color = c;
+	}
+	
+	public void setMake(String ma){
+		make = ma;
+	}
+	
+	public void setModel(String mo){
+		model = mo;
+	}
+	
+	public void setAge(int a){
+		age = a;
+	}
+
+
+
+
+
+
+
+} // end of class

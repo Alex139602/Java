@@ -1,0 +1,13 @@
+package ex1;
+
+import ex1.Car;
+
+public class MakeCars {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

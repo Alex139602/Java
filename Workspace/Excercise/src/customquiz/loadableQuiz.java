@@ -37,7 +37,6 @@ public class loadableQuiz {
 		
 	}
 
-	
 	public static void runLoadableQuiz() {
 		int val = Utilities.showOption("Please Choose a Quiz", "", "Exit Programme", "Capitals Quiz" );
 		switch(val) {
