@@ -4,6 +4,7 @@ package Starter.Finance;
 public class Program {
 
 	public static void main(String[] args) {
+		Account.setOverdraftLimit(700);
 		Account ac1, ac2;
 		ac1 = new Account("Fred", 100);
 		ac2 = new Account("Susy");
@@ -31,7 +32,7 @@ public class Program {
 					(int) (Math.random() * 100) + 1);
 		}
 		for (Account a : studentAccs) {
-			System.out.println(a.getDetails());
+			System.out.printf("%s\tAvailableFunds=%.2f\n", a.getDetails(), a.getTotalAvailableFunds());
 		}
 		for (int i = 0; i < studentAccs.length; i++) {
 			int transferAmt = studentAccs[i].getHolder().length();

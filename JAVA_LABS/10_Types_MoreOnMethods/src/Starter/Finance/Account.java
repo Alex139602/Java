@@ -46,14 +46,30 @@ public class Account {
 		return result;
 	}
 
-	public static boolean transfer(Account from, Account to, double amt) {
+	public static boolean transfer(Account accFrom, Account accTo, double amt) {
 		boolean result = false;
 
-		if (from.withdraw(amt)) {
-			to.deposit(amt);
+		if (accFrom.withdraw(amt)) {
+			accTo.deposit(amt);
 			result = true;
 		}
 		System.out.printf("Transfer Successful: %s\n", result ? "YES" : "NO");
 		return result;
 	}
-}
+
+	public double getTotalAvailableFunds() {
+		return getBalance() + getOverdraftLimits();
+	}
+	
+	public static double getOverdraftLimits() {
+		return overdraftLimit;
+	}
+	
+	public static void setOverdraftLimit(double overdraftLimit) {
+		if (overdraftLimit >= 0) {
+			Account.overdraftLimit = overdraftLimit;
+		}
+	}
+
+	
+} // end of class

@@ -1,0 +1,14 @@
+package Starter.Finance;
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		Account ac1, ac2 = null;
+		ac1 = new Account("Fred", 100.00);
+		ac2 = new Account("Suzy", 150.00);
+		
+		
+	} // end of main
+
+} // end of class

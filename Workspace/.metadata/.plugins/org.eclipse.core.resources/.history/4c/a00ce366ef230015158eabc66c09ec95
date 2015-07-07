@@ -1,0 +1,20 @@
+package Starter.Finance;
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		Account ac1, ac2 = null;
+		
+		ac1 = new Account();
+		ac1 = new Account();
+		
+		System.out.println(ac1 == ac2);
+		
+		
+		
+	
+	
+	} // end of main
+
+} // end of class

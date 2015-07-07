@@ -5,8 +5,7 @@ public class Account
     private double balance;
     private String holder;
 
-    public Account(double balance, String holder)
-    {
+    public Account( double balance, String holder ) {
         this.balance = balance;
         this.holder = holder;
     }

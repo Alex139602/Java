@@ -1,15 +1,20 @@
 package Starter.WorkingWithMoney;
 
+import java.util.ArrayList;
+import java.lang.System.*;
+
 class Program {
+	
+	
     public static void main(String[] args) {
       // to be used in Part 1 of money 
-      //testingWhenOnlyPence();
-
-
+      testingWhenOnlyPence();
+      
+      
 
       // to be used in Part 2 after Pounds are introduced as parameters  
-      //testingWhenPoundsAndPence(); 
-    }
+      testingWhenPoundsAndPence(); 
+    } // end of main
     
     private static void testingWhenOnlyPence() {  
       //Money m1;

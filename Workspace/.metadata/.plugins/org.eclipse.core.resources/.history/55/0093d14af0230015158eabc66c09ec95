@@ -1,0 +1,17 @@
+package Starter.Finance;
+
+public class Account {
+
+	private String holder;
+	private double balance;
+	private String accNumber;
+	
+	public Account() {
+	}
+	
+	public Account(String holder, double balance){
+		this.holder = holder;
+		this.balance = balance;
+	}
+	
+} // end of class
