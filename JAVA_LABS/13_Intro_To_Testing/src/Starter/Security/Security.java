@@ -4,17 +4,30 @@ public class Security {
 
 	// returns a 'SecurityStatus' object comprising a
 	// boolean representing success and a String errorMessage.
-	public SecurityStatus logon(String userId, String password) {
+	
+	public static void main(String[] args) {
+		int twoPointFive = 5/2;
+		System.out.println(twoPointFive);
+		
+	}
+	
+	public Security(){
+		
+	}
+	
+	public SecurityStatus login(String userId, String password) {
 
-		SecurityStatus ss = new SecurityStatus(true, "");
+		SecurityStatus sS = new SecurityStatus(true, "");
 
 		// validation will happen here
 
-		return ss;
+		return sS;
 	}
 
 	
 	
 	// helper method here to check password contents
-
+	public void validLogon(String userId, String Password){
+		
+	}
 }

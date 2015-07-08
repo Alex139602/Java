@@ -56,10 +56,10 @@ public class ZooProgram {
 		
 		String[] keys = new String[]{"Hi", "Hello"};
 		for (String key : keys ) {
-			//System.out.println("Animal: " + key + " -- " + "Count: " + animalMap.get(key));
+			
+			System.out.println("Animal: " + key + " -- " + "Count: " + animalMap.get(key));
 			
 		}
-		
 		
 		System.out.println();
 	}

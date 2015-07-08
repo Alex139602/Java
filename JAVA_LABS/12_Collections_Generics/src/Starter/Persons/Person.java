@@ -1,5 +1,7 @@
 package Starter.Persons;
 
+import java.io.PrintStream;
+
 public class Person {
 	private String name;
 	private int age;
@@ -23,6 +25,10 @@ public class Person {
 
 	public String getDetails() {
 		return String.format("%s\t is %d years old", name, age);
+	}
+	
+	public String toString() {
+		return String.format("\tName: %s\tAge: %d", this.name, this.age);
 	}
 
 }
