@@ -1,0 +1,39 @@
+package Starter.WorkingWithMoney;
+
+import java.util.ArrayList;
+import java.lang.System.*;
+
+public class Program {
+	
+	
+    public static void main(String[] args) {
+      // to be used in Part 1 of money 
+      testingWhenOnlyPence();
+      
+      
+
+      // to be used in Part 2 after Pounds are introduced as parameters  
+      testingWhenPoundsAndPence(); 
+    } // end of main
+    
+    private static void testingWhenOnlyPence() {  
+    	Money m1, m2, m3, m4;
+    	
+    	m1 = new Money(-1);
+    	m2 = new Money(0);
+    	m3 = new Money(99);
+    	m4 = new Money(100);
+    	
+    	Money[] mAr = new Money[]{m1, m2, m3, m4 };
+    	
+    	for (Money money : mAr) {
+			money.getValidMoney(money.getPence());
+		}
+    	
+      
+    }
+     
+    private static void testingWhenPoundsAndPence() {
+
+    }
+  }

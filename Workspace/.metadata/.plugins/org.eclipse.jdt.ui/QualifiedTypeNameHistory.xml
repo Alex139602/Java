@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="javax.xml.ws.soap.AddressingFeature"/>
 <fullyQualifiedTypeName name="ex1.Weights"/>
 <fullyQualifiedTypeName name="ex1.Lengths"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.LineNumberReader"/>
 <fullyQualifiedTypeName name="ex1.ModifiableQuiz"/>
@@ -41,8 +40,14 @@
 <fullyQualifiedTypeName name="Starter.Persons.Person"/>
 <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="javax.security.auth.login.LoginContext"/>
 <fullyQualifiedTypeName name="Starter.Security.Security"/>
+<fullyQualifiedTypeName name="java.util.MissingFormatArgumentException"/>
+<fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+<fullyQualifiedTypeName name="Starter.WorkingWithMoney.Money"/>
+<fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

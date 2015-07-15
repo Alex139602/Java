@@ -1,0 +1,91 @@
+package Starter.WorkingWithMoney;
+
+public class Money {
+	private boolean validMoney;
+	private int pence;
+	private int pounds;
+	
+	
+	public Money(int pennies){
+		if( getValidMoney(pennies) == true ){
+			//System.out.println("valid pennies");
+		} else {
+			//System.out.println("not valid pennies");
+		}
+		setPence(pennies);
+	}
+
+	public Money( int pnds, int pennies ){
+		if( getValidMoney(pennies) == true ){
+			//System.out.println("valid pennies");
+		} else {
+			//System.out.println("not valid pennies");
+		}
+		setPounds(pnds);
+		setPence(pennies);
+		
+	}
+	
+	public int getPence() {
+		return pence;
+	}
+	
+	public void setPence(int pence) {
+		this.pence = pence;
+	}
+	
+	public boolean getValidMoney(int pennies) {
+		if( pennies >= 0 && pennies <= 99 ){
+			setValidMoney(true);
+		} else {
+			setValidMoney(false);
+		}
+		return validMoney;
+	}
+	
+	public boolean getValidMoney() {
+		int pennies = this.pence;
+		int pnds = this.pounds;
+		if( pennies >= 0 && pennies < 100 && pnds >= 0 && pnds < 100 ){
+			setValidMoney(true);
+		} else {
+			setValidMoney(true);
+		}
+		return validMoney;
+	}
+	
+	public void setValidMoney(boolean validMoney) {
+		this.validMoney = validMoney;
+	}
+	
+	public String getCurrentMoney() {
+		if (getValidMoney(this.pounds, this.pence)) {
+			return String.format("Current money is: £%s.%d", getPounds(), getPence());
+		} else {
+			return String.format("error: invalid money. valid money returned %s", getValidMoney(this.pounds, this.pence));
+		}
+	}
+
+	public int getPounds() {
+		return pounds;
+	}
+	
+	public void setPounds(int pounds){
+		this.pounds = pounds;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+} // end of class

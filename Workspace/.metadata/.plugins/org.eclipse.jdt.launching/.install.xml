@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-<entry loc="C:\Program Files\Java\jre7" stamp="1422283338959"/>
+<entry loc="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" stamp="1436911298000"/>
 <entry loc="C:\Program Files\Java\jre1.8.0_45" stamp="1435514950056"/>
+<entry loc="C:\Program Files\Java\jre7" stamp="1422283338959"/>
+<entry loc="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home" stamp="1428691750000"/>
 </dirs>

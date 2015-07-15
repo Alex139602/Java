@@ -5,12 +5,6 @@ public class Security {
 	// returns a 'SecurityStatus' object comprising a
 	// boolean representing success and a String errorMessage.
 	
-	public static void main(String[] args) {
-		int twoPointFive = 5/2;
-		System.out.println(twoPointFive);
-		
-	}
-	
 	public Security(){
 		
 	}
@@ -18,7 +12,8 @@ public class Security {
 	public SecurityStatus login(String userId, String password) {
 
 		SecurityStatus sS = new SecurityStatus(true, "");
-
+		
+		
 		// validation will happen here
 
 		return sS;
