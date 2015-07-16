@@ -21,13 +21,10 @@ public class HexGenerator {
 		
 		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 8, 20);
 	
-		/*
-		String str = Arrays.toString(hx);
+		/*String str = Arrays.toString(hx);
 		
 		System.out.println(str);
 		*/
-		
-		
 	} // end of main
 	
 	public static String[] generateHexCode(String[] strArray, int hexCodeLength, int numberOfHexCodes) {

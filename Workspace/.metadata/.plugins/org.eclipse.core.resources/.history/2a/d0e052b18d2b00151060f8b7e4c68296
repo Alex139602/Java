@@ -26,8 +26,6 @@ public class HexGenerator {
 		
 		System.out.println(str);
 		*/
-		
-		
 	} // end of main
 	
 	public static String[] generateHexCode(String[] strArray, int hexCodeLength, int numberOfHexCodes) {

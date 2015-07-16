@@ -2,8 +2,9 @@ package hexgen;
 
 import java.util.Arrays;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
+import ;
 
 public class HexGenerator {
 	
@@ -19,16 +20,12 @@ public class HexGenerator {
 	
 	public static void main(String[] args) {
 		
-		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 8, 20);
+		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 8, 3);
 	
-		/*
 		String str = Arrays.toString(hx);
 		
 		System.out.println(str);
-		*/
-		
-		
-	} // end of main
+	}
 	
 	public static String[] generateHexCode(String[] strArray, int hexCodeLength, int numberOfHexCodes) {
 		String[] hexString = new String[numberOfHexCodes];
@@ -59,5 +56,3 @@ public class HexGenerator {
 			
 			//TOOD: User interface
 	}	
-	
-} // end of class
