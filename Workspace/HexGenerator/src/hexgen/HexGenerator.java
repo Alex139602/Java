@@ -19,7 +19,7 @@ public class HexGenerator {
 	
 	public static void main(String[] args) {
 		
-		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 8, 20);
+		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 120, 45);
 	
 		/*
 		String str = Arrays.toString(hx);

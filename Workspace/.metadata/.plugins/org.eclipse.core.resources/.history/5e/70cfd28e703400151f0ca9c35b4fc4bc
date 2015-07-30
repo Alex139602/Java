@@ -1,0 +1,39 @@
+package money;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class AccountTest {
+
+	@Test
+	public void testAccountStringDouble() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAccountString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testWithdraw() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetTotalAvailableFunds() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetOverdraftLimits() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSetOverdraftLimit() {
+		fail("Not yet implemented");
+	}
+
+}

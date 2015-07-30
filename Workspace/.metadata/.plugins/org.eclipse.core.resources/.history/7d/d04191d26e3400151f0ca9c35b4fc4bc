@@ -1,0 +1,39 @@
+package money;
+
+import java.io.IOException;
+
+public class getMoney {
+
+	public static void main(String[] args) {
+		
+		Account alex = new Account("Alex", 1000);
+		alex.withdraw(700);
+		alex.accountToString();
+		Account urm = new Account("Urmila");
+		urm.accountToString();
+		
+		try {
+			Account[] acc = FileCopy.calculateAccountDetails(FileCopy.sourceFileLocation, FileCopy.targetFileLocation);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	} // end of main
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+} // end of class

@@ -1,0 +1,14 @@
+package time;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NewCopyFileTest {
+
+	@Test
+	public void testCopyFile() {
+		fail("Not yet implemented");
+	}
+
+}

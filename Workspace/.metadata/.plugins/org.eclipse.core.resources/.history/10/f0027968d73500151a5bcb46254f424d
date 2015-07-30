@@ -1,0 +1,37 @@
+package time;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NewTimeTest {
+
+	@Test public void testNewTimeIntInt() {
+		NewTime newTime = new NewTime(10, 10);
+		assertEquals(newTime.getHours(), 10); // should be 10, tests the constructor and getters
+	}
+
+	@Test public void testValid24Time() {
+		NewTime newTim = new NewTime(99, 1000);
+		
+		assertFalse(newTim.valid24Time()); // should return false as this isnt a valid time
+	}
+
+	@Test public void testAddTime() {
+		fail("Not yet implemented");
+	}
+
+	@Test public void testSubtractTime() {
+		fail("Not yet implemented");
+	}
+
+	@Test public void testGetCurrentTime() {
+		NewTime nt = new NewTime(1, 9);
+		String actual = nt.getCurrentTime();
+		String expected = "1:09";
+		assertEquals( expected, actual ); // checks if the format is correct, should return 1:09 not 1:9
+	}
+
+	
+	
+}

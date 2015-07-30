@@ -1,0 +1,34 @@
+package time;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NewTimeTest {
+
+	@Test
+	public void testNewTimeIntInt() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testValid24Time() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAddTime() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSubtractTime() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetCurrentTime() {
+		fail("Not yet implemented");
+	}
+
+}

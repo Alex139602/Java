@@ -1,0 +1,3 @@
+Alex, 500
+Urmila, 600
+Joe, 700

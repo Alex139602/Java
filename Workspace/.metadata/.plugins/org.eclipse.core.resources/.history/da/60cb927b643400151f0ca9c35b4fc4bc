@@ -1,0 +1,30 @@
+package money;
+
+public class getMoney {
+
+	public static void main(String[] args) {
+		
+		Account alex = new Account("Alex", 1000);
+		alex.withdraw(500);
+		alex.accountToString();
+		Account urm = new Account("Urmila");
+		urm.accountToString();
+		
+		
+	} // end of main
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+} // end of class

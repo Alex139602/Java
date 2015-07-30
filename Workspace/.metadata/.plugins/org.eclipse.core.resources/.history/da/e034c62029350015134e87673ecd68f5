@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NewLogFileTest {
+	
+	@Test public void testAppendMessageToFile() {
+		
+		assertTrue(NewLogFile.writeToLogFile("hi alex", NewLogFile.targetFileLocation));
+		
+	}
+
+
+}

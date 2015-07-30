@@ -1,0 +1,38 @@
+import static org.junit.Assert.*;
+
+import java.io.File;
+
+import javax.swing.JFileChooser;
+
+import org.junit.Test;
+
+public class NewLogFileTest {
+	
+	@Test public void testAppendMessageToFile() {
+		
+		assertTrue( NewLogFile.writeToLogFile("hi alex", NewLogFile.targetFileLocation ) );
+		
+	}
+	
+	@Test public void testUserInputAppendMessageToFile(){
+
+		String getTheseFiles = null;
+		JFileChooser fc = new JFileChooser();
+		fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES)
+		int returnVal = fc.showDialog(fc, "Choose File to Append or Directory to create file in");
+		if (returnVal == JFileChooser.APPROVE_OPTION) {
+			File file = fc.getSelectedFile();
+			if (file.isDirectory()) {
+				file.getPath();
+			} else {
+				getTheseFiles = file.getPath();
+			}
+		}
+		
+		
+		assertTrue( NewLogFile.writeToLogFile("this was a chosen file", getTheseFiles));
+		
+	}
+
+
+}
