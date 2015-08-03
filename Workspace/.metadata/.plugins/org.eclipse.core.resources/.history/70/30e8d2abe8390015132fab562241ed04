@@ -1,0 +1,8 @@
+package starter.Employees;
+
+
+
+public class Manager // extends Employee 
+{
+	
+}

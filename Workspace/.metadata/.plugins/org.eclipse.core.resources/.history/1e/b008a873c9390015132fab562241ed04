@@ -1,0 +1,34 @@
+package Starter;
+
+import java.awt.Color;
+import java.awt.Point;
+
+public class Shape {
+	
+	public Color color;
+	public Point point;
+	
+	public Shape() {
+		this.setColor(Color.WHITE);
+		this.setPoint(0,0);
+	}
+	
+	public Color getColor() {
+		return this.color;
+	}
+
+	public Point getPoint() {
+		return this.point;
+	}
+	
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	public void setPoint(int i, int j) {
+		this.point = new Point();
+		this.point.x = i;
+		this.point.y = j;
+	}
+
+} // end of class

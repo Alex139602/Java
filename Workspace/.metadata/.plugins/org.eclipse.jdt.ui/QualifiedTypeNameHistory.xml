@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="ex1.Lengths"/>
-<fullyQualifiedTypeName name="java.io.LineNumberReader"/>
-<fullyQualifiedTypeName name="ex1.ModifiableQuiz"/>
-<fullyQualifiedTypeName name="java.io.FilterWriter"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="javax.sound.midi.Synthesizer"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="javax.rmi.CORBA.Util"/>
@@ -18,7 +12,6 @@
 <fullyQualifiedTypeName name="ex1.Utilities"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Starter.Finance.Account"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="Starter.Persons.Person"/>
 <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="time.NewLogFile"/>
 <fullyQualifiedTypeName name="java.util.TimerTask"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="solution.Vehicle.Vehicle"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="starter.Vehicle.Vehicle"/>
+<fullyQualifiedTypeName name="solution.FactoryStuff.RegistrationPlate"/>
+<fullyQualifiedTypeName name="solution.FactoryStuff.RegistrationPlateFactory"/>
+<fullyQualifiedTypeName name="starter.FactoryStuff.RegistrationPlate"/>
+<fullyQualifiedTypeName name="starter.FactoryStuff.RegistrationPlateFactory"/>
 </qualifiedTypeNameHistroy>

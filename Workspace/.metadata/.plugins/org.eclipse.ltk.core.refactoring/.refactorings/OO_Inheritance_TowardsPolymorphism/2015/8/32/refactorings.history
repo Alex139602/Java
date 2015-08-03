@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;m&apos; in &apos;starter.Cars.Car.Car(...)&apos; to &apos;model&apos;&#x0A;- Original project: &apos;OO_Inheritance_TowardsPolymorphism&apos;&#x0A;- Original element: &apos;starter.Cars.Car.Car(String).m&apos;&#x0A;- Renamed element: &apos;m&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;m&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;starter.Cars{Car.java[Car~Car~QString;@m!351!358!358!358!QString;!0!true" name="model" references="true" stamp="1438606495988" version="1.0"/>
+</session>

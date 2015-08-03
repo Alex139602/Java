@@ -1,0 +1,18 @@
+package Starter.Account;
+
+public class InsufficientFundsException extends RuntimeException{
+	public Account acc;
+	public double amt;
+	public String errMessage;
+	
+	public InsufficientFundsException(String string) {
+		this.errMessage = string;
+	}
+	
+	/*public InsufficientFundsException(Account ac, double amount) {
+		double balnc = ac.getBalance();
+		if (balnc < amount) {
+			return;
+		}
+	}*/
+} // end of class
