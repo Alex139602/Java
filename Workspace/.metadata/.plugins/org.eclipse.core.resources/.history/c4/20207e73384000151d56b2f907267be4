@@ -1,0 +1,10 @@
+package hexgen;
+
+import javax.xml.soap.*;
+public class TeemseerSOAPAPIConnection {
+
+	public static void main(String[] args) {
+		
+	}
+	
+}

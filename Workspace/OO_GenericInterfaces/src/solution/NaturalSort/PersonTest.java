@@ -1,4 +1,4 @@
-package Solution.NaturalSort;
+package solution.NaturalSort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

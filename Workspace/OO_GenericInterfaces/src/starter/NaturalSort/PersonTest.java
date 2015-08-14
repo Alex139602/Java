@@ -1,4 +1,4 @@
-package Starter.NaturalSort;
+package starter.NaturalSort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,14 +9,10 @@ public class PersonTest {
 
 
 	private static int[] ages = { 36, 53, 51, 21, 41, 19 };
-	private static String[] names = 
-		  { "Holland", "Turner", "Powell", 
-		    "Vicious", "Lyndon", "Spears" };
+	private static String[] names =  { "Holland", "Turner", "Powell", "Vicious", "Lyndon", "Spears" };
 	
-	private static ArrayList<Integer> ageList
-	                                  = new ArrayList<>();
-	private static ArrayList<String> nameList
-	                                  = new ArrayList<>();	
+	private static ArrayList<Integer> ageList = new ArrayList<>();
+	private static ArrayList<String> nameList = new ArrayList<>();	
 
 	
 

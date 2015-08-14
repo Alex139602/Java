@@ -1,4 +1,4 @@
-package Starter.OtherSort;
+package starter.OtherSort;
 
 public class PersonNameComparer {
 

@@ -1,4 +1,4 @@
-package Solution.GenericMethods;
+package solution.GenericMethods;
 
 import java.util.*;
 

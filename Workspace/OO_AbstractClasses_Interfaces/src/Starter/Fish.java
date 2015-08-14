@@ -3,8 +3,8 @@ package Starter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Fish implements Consumable, Insurable {
-
+public class Fish implements IConsumable, IInsurable {
+	
 	private String name;
 
 	public String getName() {
@@ -15,12 +15,9 @@ public class Fish implements Consumable, Insurable {
 		this.name = name;
 	}
 
-	public String describeTaste() {
-		return getName() + ": Quite fishy";
-	}
-
+	@Override
 	public String isMainCourseDish() {
-		return getName() + ": True";
+		return getName() + ": Main Course (True)";
 	}
 
 	public String getPremium() {
@@ -32,4 +29,10 @@ public class Fish implements Consumable, Insurable {
 		Date date = new Date();
 		return getName() + ": " + dateFormat.format(date);
 	}
+
+	@Override
+	public String describeTaste() {
+		return getName() + ": Quite Fishy";
+	}
+
 }

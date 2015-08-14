@@ -1,4 +1,4 @@
-package Starter.GenericMethods;
+package starter.GenericMethods;
 
 import java.util.Comparator;
 

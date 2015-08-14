@@ -1,6 +1,6 @@
 package Starter;
 
-public class Bird  {
+public abstract class Bird implements IConsumable {
 
 	private String name;
 

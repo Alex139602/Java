@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.jst.ws.client.type.java">
+		<item value="https://www.teamseer.com/services/soap/coreapi/1_0_0/teamseer_core_api.wsdl"/>
+	</list>
+</section>

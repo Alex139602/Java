@@ -1,6 +1,4 @@
-package Starter.OtherSort;
-
-import java.util.Comparator;
+package starter.OtherSort;
 
 public class Person implements Comparable<Person> {
 

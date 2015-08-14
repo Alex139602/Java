@@ -1,4 +1,4 @@
-package Starter.NaturalSort;
+package starter.NaturalSort;
 
 public class Person {
 

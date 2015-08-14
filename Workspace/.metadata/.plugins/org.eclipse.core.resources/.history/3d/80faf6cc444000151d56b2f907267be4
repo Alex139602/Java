@@ -1,0 +1,32 @@
+package teamseer_core_api;
+import javax.activation.*;
+import javax.xml.rpc.ServiceException;
+
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.nio.charset.MalformedInputException;
+import java.rmi.RemoteException;
+
+public class TimeMangerConnection {
+	
+	//public static final URI teamSeerUri = new URI("https", "www.teamseer.com", "/services/soap/coreapi/1_0_0/teamseer_core_api.wsdl");
+	public static final String teamSeerPwd = "3795bae113";
+	public static final String teamSeerVersion = "1_0_0";
+	
+	public static void main(String[] args) {
+		try {
+			Teamseer_core_apiServiceLocator loc = new Teamseer_core_apiServiceLocator();
+			Teamseer_core_apiBindingStub stub = new Teamseer_core_apiBindingStub(new URL( "https", "www.teamseer.com", "/services/soap/coreapi/1_0_0/teamseer_core_api.wsdl"), loc);
+			//System.out.println(stub.toString());
+			stub.setMaintainSession(true);
+			stub.authenticate(1576, teamSeerPwd , teamSeerVersion);
+			System.out.println(stub.getPortName());
+		} catch (RemoteException | ServiceException | MalformedURLException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,7 +1,5 @@
 package hexgen;
 
-import java.util.Arrays;
-
 import javax.swing.*;
 
 
@@ -19,7 +17,7 @@ public class HexGenerator {
 	
 	public static void main(String[] args) {
 		
-		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 120, 45);
+		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 10, 41);
 	
 		/*
 		String str = Arrays.toString(hx);

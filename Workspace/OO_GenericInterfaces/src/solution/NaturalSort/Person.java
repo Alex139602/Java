@@ -1,4 +1,4 @@
-package Solution.NaturalSort;
+package solution.NaturalSort;
 
 public class Person implements Comparable<Person> {
 

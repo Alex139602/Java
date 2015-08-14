@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;webService&apos; in &apos;teamseer_core_api.TimeMangerConnection.main(...)&apos; to &apos;stub&apos;&#x0A;- Original project: &apos;HexGenerator&apos;&#x0A;- Original element: &apos;teamseer_core_api.TimeMangerConnection.main(String[]).webService&apos;&#x0A;- Renamed element: &apos;webService&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;webService&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;teamseer_core_api{TimeMangerConnection.java[TimeMangerConnection~main~\[QString;@webService!880!949!906!915!QTeamseer_core_apiPortType;!0!false" name="stub" references="true" stamp="1439375527172" version="1.0"/>
+</session>

@@ -14,14 +14,35 @@ public class Program {
          hoop.setColour(Color.RED);
          hoop.setPosition(new Point(3, 4));
          hoop.setRadius(25.55);
-         hoop.printCharacteristics();
 
          Sphere ball = new Sphere();
          ball.setColour(Color.BLUE);
          ball.setPosition(new Point(6, 6));
          ball.setRadius(25.55);
-         ball.printCharacteristics();
+         
+         Shape shapes[] = {blob, hoop, ball};
+         System.out.println("----------------");
+         for (Shape shape : shapes) {
+        	
+			shape.printCharacteristics();
+			System.out.println("----------------");
+         }
+         
+         System.out.println("-------------- Areas --------------");
 
+         for (Shape shape : shapes) {
+			printArea(shape);
+		}
+	}
+	
+	public static void printArea(Shape sh){
+		System.out.println("Name: " + sh.getClassNameOnly() );
+		if ( sh instanceof Circle ) {
+			Circle c = (Circle) sh;
+			System.out.println("Area: " + c.getArea());
+		} else {
+			System.out.println("This isnt a circle! no area printing");
+		}
 	}
 
 }

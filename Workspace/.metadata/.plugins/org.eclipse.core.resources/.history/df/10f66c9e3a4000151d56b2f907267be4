@@ -1,0 +1,40 @@
+package hexgen;
+
+import javax.xml.soap.*;
+
+public class TeemseerSOAPAPIConnection {
+	
+	public static final String teemSeerUrl = "https://www.teamseer.com/services/soap/coreapi/1_0_0/teamseer_core_api.wsdl";
+	public static final String teemSeerPwd = "3795bae113";
+	public static final String teemSeerVersion = "1_0_0";
+	
+	
+	public static void main(String[] args) throws Exception {
+		SOAPConnectionFactory scf = null;
+		SOAPConnection sc = null;
+		try{
+		scf = SOAPConnectionFactory.newInstance();
+		sc = scf.createConnection();
+		
+		MessageFactory myMessageFactory = MessageFactory.newInstance();
+		SOAPMessage msg = myMessageFactory.createMessage();
+		
+		SOAPPart myPart = msg.getSOAPPart();
+		SOAPEnvelope mySoapEnvelope = myPart.getEnvelope();
+		
+		
+		System.out.println(sc);
+		
+		} catch(Exception e){
+			System.out.println(e.getMessage());
+			System.out.println(System.lineSeparator());
+			System.out.println(System.lineSeparator());
+			e.printStackTrace();
+		} finally {
+			sc.close();
+		}
+	} // end of main
+	
+	
+	
+}

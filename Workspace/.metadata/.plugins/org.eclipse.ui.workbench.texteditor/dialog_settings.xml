@@ -13,8 +13,11 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="valid weight" key="selection"/>
+		<item value="Teamseer_core_apiServiceLocator" key="selection"/>
 		<list key="findhistory">
+			<item value="call"/>
+			<item value="exit"/>
+			<item value="printstac"/>
 			<item value="valid weight"/>
 			<item value="20"/>
 		</list>

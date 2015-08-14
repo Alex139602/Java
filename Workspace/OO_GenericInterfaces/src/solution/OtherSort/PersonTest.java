@@ -1,4 +1,4 @@
-package Solution.OtherSort;
+package solution.OtherSort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
