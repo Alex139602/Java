@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HexGenerator&apos; to &apos;test&apos;" description="Rename resource &apos;HexGenerator&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/HexGenerator" name="test" stamp="1439560279696" updateReferences="true"/>
+</session>
