@@ -2,3 +2,4 @@
 1439895853820	Rename local variable 'isNowWorking'
 1439903864647	Rename field 'teamSeerPwd'
 1439905987340	Rename local variable 'j'
+1439979207878	Rename method 'generateHexCode'

@@ -28,7 +28,6 @@ public class TimeMangerConnection {
 		try {
 			
 			Teamseer_core_apiServiceLocator service = new Teamseer_core_apiServiceLocator();
-			
 			service.setMaintainSession(true);
 			boolean isMaintained = service.getMaintainSession();
 			System.out.println( "Session Maintained: " + isMaintained );
@@ -41,14 +40,14 @@ public class TimeMangerConnection {
 			
 			if (isAuthenticated) {
 				String[] users = bindingStub.getActiveUsers();
-				System.out.println( Arrays.toString(users) );
+				System.out.println( "List of users: " + Arrays.toString(users) );
 				System.out.println( users.length );
 				
 				System.out.println(bindingStub.setDateFormat("yyyy-mm-dd"));
 				
 				for (String user : users) {
-					DayActivityAPI[] dayArray = bindingStub.getRecordsFor( user, "2015-08-07", "2015-08-26");
-					if ( dayArray.length != 0  && (user.contains("awainwright") /*|| user.contains("wzyli")*/ ) ) {
+					DayActivityAPI[] dayArray = bindingStub.getRecordsFor( user, "2015-08-20", "2015-08-27");
+					if ( dayArray.length != 0  && user.contains("wzy")   ) {
 						System.out.println(Arrays.toString(dayArray));
 						
 						for (int i = 0; i < dayArray.length; i++) {
@@ -59,17 +58,17 @@ public class TimeMangerConnection {
 							System.out.println("Date Of Holiday: " + dayArray[i].getDate() );
 							System.out.println("Has Notes: " + dayArray[i].isHasNotes() );
 							System.out.println("Needs Approval: " + dayArray[i].isNeedsApproval() );
-							System.out.println("Needs Approval: " + dayArray[i].);
 							System.out.println("CategoryArr: " + dayArray[i].getCategoryArr());
 							System.out.println("Status String: " + dayArray[i].getStatusStr());
 							System.out.println("TypeString: " + dayArray[i].getTypeStr());
 							System.out.println(" ------------------ ");
-							System.out.println();
 							
 						}
 						
 						
 						
+					} else {
+						//System.out.println("No records");
 					}
 					
 					
@@ -80,7 +79,6 @@ public class TimeMangerConnection {
 			
 			
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
 		
@@ -88,7 +86,7 @@ public class TimeMangerConnection {
 	
 	
 	public void doStuff(){
-		
+		//TODO: stuff
 	}
 
 }

@@ -17,7 +17,7 @@ public class HexGenerator {
 	
 	public static void main(String[] args) {
 		
-		String[] hx = generateHexCode(HEX_ARRAY_CAPS_AND_LOWER, 10, 41);
+		String[] hx = generateHexCodes(HEX_ARRAY_CAPS_AND_LOWER, 10, 41);
 	
 		/*
 		String str = Arrays.toString(hx);
@@ -28,7 +28,7 @@ public class HexGenerator {
 		
 	} // end of main
 	
-	public static String[] generateHexCode(String[] strArray, int hexCodeLength, int numberOfHexCodes) {
+	public static String[] generateHexCodes(String[] strArray, int hexCodeLength, int numberOfHexCodes) {
 		String[] hexString = new String[numberOfHexCodes];
 		
 		int arrLength = strArray.length;
