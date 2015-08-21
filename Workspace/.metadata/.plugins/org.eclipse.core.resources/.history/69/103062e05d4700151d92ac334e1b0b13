@@ -1,0 +1,13 @@
+package NorwegianPreviewsFolderFileCreator;
+
+public class run {
+
+	public static void main(String[] args) {
+		
+		
+		
+	} // end of main
+	
+	
+
+} // end of class

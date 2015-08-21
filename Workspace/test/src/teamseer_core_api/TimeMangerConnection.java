@@ -19,9 +19,9 @@ import java.util.Map;
 public class TimeMangerConnection {
 	
 	public static final String teamSeerWSDLloc = "https://www.teamseer.com/services/soap/coreapi/1_0_0/teamseer_core_api.wsdl";
-	public static final String teamSeerKey = "3795bae113";
+	
 	public static final String teamSeerVersion = "1_0_0";
-	public static final int teamSeerCompanyId = 1576;
+	
 	
 	public static void main(String[] args) {
 		
