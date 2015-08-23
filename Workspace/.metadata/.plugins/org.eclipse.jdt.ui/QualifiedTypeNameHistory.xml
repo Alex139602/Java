@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="money.FileCopy"/>
-<fullyQualifiedTypeName name="org.junit.internal.runners.JUnit38ClassRunner"/>
-<fullyQualifiedTypeName name="org.junit.runner.JUnitCore"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="Utilities"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="NewLogFile"/>
 <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
 <fullyQualifiedTypeName name="time.NewLogFile"/>
 <fullyQualifiedTypeName name="java.util.TimerTask"/>
@@ -50,14 +44,20 @@
 <fullyQualifiedTypeName name="java.net.URI"/>
 <fullyQualifiedTypeName name="java.nio.charset.MalformedInputException"/>
 <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
-<fullyQualifiedTypeName name="teamseer_core_api.Teamseer_core_apiServiceLocator"/>
 <fullyQualifiedTypeName name="teamseer_core_api.Teamseer_core_apiService"/>
-<fullyQualifiedTypeName name="teamseer_core_api.Teamseer_core_apiBindingStub"/>
 <fullyQualifiedTypeName name="javax.xml.rpc.ServiceException"/>
 <fullyQualifiedTypeName name="javax.jws.WebService"/>
 <fullyQualifiedTypeName name="javax.annotation.processing.SupportedAnnotationTypes"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="teamseer_core_api.DayActivityAPI"/>
+<fullyQualifiedTypeName name="teamseer_core_api.Teamseer_core_apiServiceLocator"/>
+<fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="teamseer_core_api.Teamseer_core_apiBindingStub"/>
 <fullyQualifiedTypeName name="teamseer_core_api.Teamseer_core_apiPortTypeProxy"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.util.concurrent.SynchronousQueue"/>
+<fullyQualifiedTypeName name="teamseer_core_api.DayActivityAPI"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>
