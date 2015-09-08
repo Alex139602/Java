@@ -31,20 +31,18 @@ public class HexGenerator {
 	public static String[] generateHexCodes(String[] strArray, int hexCodeLength, int numberOfHexCodes) {
 		String[] hexString = new String[numberOfHexCodes];
 		
-		int arrLength = strArray.length;
-		
 		for (int i = 0 ; i < numberOfHexCodes ; i++ ) {
 			
 			for (int j = 0 ; j < hexCodeLength ; j++ ) {
-				int valToGet = (int) (Math.random()*arrLength);
-				if (hexString[i] == null) {
-					hexString[i] = strArray[valToGet];
-				} else {
-					hexString[i] += strArray[valToGet];
-				}
+				int valToGet = (int) Math.floor(Math.random()*strArray.length);
+					if (hexString[i] == null) {
+						hexString[i] = strArray[valToGet];
+					} else {
+						hexString[i] += strArray[valToGet];
+					}
 			}
 			
-			System.out.println(hexString[i]);
+			System.out.println(hexString[i].toLowerCase());
 			
 		}
 		
