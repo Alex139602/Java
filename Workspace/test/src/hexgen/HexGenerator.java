@@ -17,8 +17,16 @@ public class HexGenerator {
 	
 	public static void main(String[] args) {
 		
-		String[] hx = generateHexCodes(HEX_ARRAY_CAPS_AND_LOWER, 10, 41);
-	
+		try{
+			String[] hx = generateHexCodes(HEX_ARRAY_CAPS_AND_LOWER, Integer.parseInt(args[0]), Integer.parseInt(args[1]));
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
 		/*
 		String str = Arrays.toString(hx);
 		
@@ -30,7 +38,7 @@ public class HexGenerator {
 	
 	public static String[] generateHexCodes(String[] strArray, int hexCodeLength, int numberOfHexCodes) {
 		String[] hexString = new String[numberOfHexCodes];
-		
+		System.out.println(newline);
 		for (int i = 0 ; i < numberOfHexCodes ; i++ ) {
 			
 			for (int j = 0 ; j < hexCodeLength ; j++ ) {
@@ -45,7 +53,7 @@ public class HexGenerator {
 			System.out.println(hexString[i].toLowerCase());
 			
 		}
-		
+		System.out.println(newline);
 		return hexString;
 		
 	}
