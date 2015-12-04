@@ -1,0 +1,64 @@
+package gui;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.util.Date;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+public class TestFrame extends JFrame {
+	
+	public static final double INTEREST_RATE = Math.E;
+	
+	public static final double STARTING_BALANCE = 1000;
+	
+	public static void alert(String s){
+		Date now = new Date();
+		TestFrame f1 = new TestFrame();
+		JLabel label = new JLabel();
+		label.setText(s);
+		label.setVerticalTextPosition(SwingConstants.CENTER);
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		f1.setSize(300, 300);
+		f1.setResizable(false);
+		f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f1.setVisible(true);
+		System.out.println(now.toString());
+		while (new Date().getTime() - now.getTime() > 7000 ) {
+			f1.dispatchEvent(new WindowEvent(f1, WindowEvent.WINDOW_CLOSING));
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		TestFrame s1 = new TestFrame();
+		s1.setLocationRelativeTo(null);
+		s1.setSize(400, 400);
+		s1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		s1.setTitle("Hello World!");
+		s1.setLayout(new GridLayout());
+		JButton button1 = new JButton();
+		button1.setText("test text");
+		
+		
+		ActionListener l = new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				this.setBalance();
+				
+			}
+			
+		};
+		button1.addActionListener(l);
+		s1.add(panel);
+		s1.setVisible(true);
+	}
+
+}

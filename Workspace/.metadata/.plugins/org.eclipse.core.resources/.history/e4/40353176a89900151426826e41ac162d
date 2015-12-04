@@ -1,0 +1,50 @@
+package main;
+
+import java.awt.Dimension;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+@SuppressWarnings("serial")
+public class FullTestFrame extends JFrame {
+	
+	public static final int STARTING_VALUE = 1000;
+	public static final double BASE_INTEREST_RATE = Math.E;
+	private static String STRING_APP_TITLE = "Processing text input";
+	public JButton button;
+	public JLabel interestLabel;
+	public JLabel balanceLabel;
+	public final int FIELD_WIDTH = 10;
+	public final JTextField textField = new JTextField(FIELD_WIDTH);
+	
+	public static void main(String[] args) 
+	{
+		FullTestFrame frame = new FullTestFrame();
+		Dimension dimens = new Dimension(800, 800);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(dimens);
+		frame.setTitle(STRING_APP_TITLE );
+		
+		frame.setVisible(true);
+	}
+	
+	private void createButton()
+	{
+		
+		
+	}
+
+	private void createInterestLabel()
+	{
+		
+	}
+
+	private void createBalanceLabel()
+	{
+		
+	}
+	
+
+}

@@ -1,0 +1,30 @@
+package gui;
+
+import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+//import java.util.Timer;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class MouseFrame extends JFrame {
+	public static int FRAME_SIZE = 800;
+	public static void main(String[] args) {
+		MouseFrame m = new MouseFrame();
+		m.setSize(FRAME_SIZE, FRAME_SIZE);
+		m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		m.setTitle("Bank Balance");
+		
+		
+		ShoppingMouseListener mListener = new ShoppingMouseListener(); 
+		
+		
+		m.add(mListener);
+		
+		m.setVisible(true);
+	}
+
+}

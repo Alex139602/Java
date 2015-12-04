@@ -1,0 +1,23 @@
+package data;
+
+public class ProductNotValidException extends Exception {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3433507304788818712L;
+
+	public ProductNotValidException(String s) throws Exception{
+		throw new Exception(s);
+	}
+	
+	public Object[] getInformation(){
+		return new Object[]{
+			this.getMessage(),
+			this.getStackTrace()
+			/*, super.getMessage(),
+			super.getStackTrace()*/
+		};
+	}
+
+}

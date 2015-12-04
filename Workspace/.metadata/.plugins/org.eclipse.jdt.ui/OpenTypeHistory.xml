@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=GraphicsDrawing/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_79.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.awt(Component.class[Component" modifiers="1057" timestamp="1428691662000"/>
+<typeInfo handle="=GraphicsDrawing/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_79.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;javax.swing(JComponent.class[JComponent" modifiers="1057" timestamp="1428691662000"/>
+<typeInfo handle="=GraphicsDrawing/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_79.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;javax.swing(JFrame.class[JFrame" modifiers="33" timestamp="1428691662000"/>
+</typeInfoHistroy>

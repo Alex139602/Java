@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="stev" key="selection"/>
+		<item value="Interest" key="selection"/>
 		<list key="findhistory">
+			<item value="interest"/>
+			<item value="in"/>
+			<item value="add interest\"/>
+			<item value="add interest"/>
+			<item value="add int"/>
+			<item value="fail"/>
 			<item value="stev"/>
 			<item value="james"/>
-			<item value="wzy"/>
-			<item value="wo"/>
-			<item value="toString"/>
-			<item value="call"/>
-			<item value="exit"/>
-			<item value="printstac"/>
 		</list>
 		<list key="replacehistory">
 		</list>

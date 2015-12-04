@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;imageUrl&apos; in &apos;scraper.FlairScraper.hasDownloadedImages()&apos; to &apos;imageString&apos;&#x0A;- Original project: &apos;FlairScraper&apos;&#x0A;- Original element: &apos;scraper.FlairScraper.hasDownloadedImages().imageUrl&apos;&#x0A;- Renamed element: &apos;imageUrl&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;imageUrl&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;scraper{FlairScraper.java[FlairScraper~hasDownloadedImages@imageUrl!1849!1914!1856!1863!QString;!0!false" name="imageString" references="true" stamp="1442597092222" version="1.0"/>
+</session>

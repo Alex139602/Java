@@ -1,0 +1,23 @@
+package gui;
+
+import javax.swing.JFrame;
+
+public class ShoppingBasketFrame extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1136717941919517633L;
+	
+	public static long getSeriealVersionUID(){return ShoppingBasketFrame.serialVersionUID;}
+	
+	public static void main(String[] args) {
+		ShoppingBasketFrame s1 = new ShoppingBasketFrame();
+		s1.setVisible(true);
+		s1.setSize(300, 400);
+		s1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		s1.setTitle("Hello World!");
+		
+	}
+
+}

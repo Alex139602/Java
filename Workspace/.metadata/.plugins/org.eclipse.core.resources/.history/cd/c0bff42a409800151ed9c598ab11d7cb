@@ -1,0 +1,55 @@
+package gui;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+
+import javax.swing.JComponent;
+
+public class CarComponent extends JComponent {
+	
+	@Override
+	public void paintComponent(Graphics g) {
+		
+		// Get Graphics2D
+		Graphics2D g2d = (Graphics2D) g;
+		// instantiate array for coordinates
+		int coords[] = new int[]{0, 10, 20, 30, 40, 50, 60, 70, 80};
+		int c1[] = new int[coords.length];
+		// draw coordinate lines
+		for (int i : coords) {
+			c1[i] = coords[i]*4;
+		}
+		for (int c : c1) {
+			System.out.println(c);
+		}
+		int valToDrawTo = coords[coords.length -1 ]; // last element
+		
+		for (int i = 0; i < coords.length; i++) 
+		{
+			
+			for (int j = 0; j < coords.length; j++) 
+			{
+				Point2D p = new Point2D.Double(coords[j], coords[i]);
+				Point2D to = new Point2D.Double(valToDrawTo, coords[i]);
+				Point2D to2 = new Point2D.Double(coords[j], valToDrawTo);
+				System.out.println(to2);
+				if (p != to) 
+				{
+					g2d.draw(new Line2D.Double(p, to));
+				} 
+				if (p != to2 && to != to2) 
+				{
+					g2d.draw(new Line2D.Double(p, to2));
+				}
+				
+			}
+		}
+		
+		
+	}
+
+}

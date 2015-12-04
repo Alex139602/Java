@@ -1,0 +1,47 @@
+package gui;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class TwoFrame extends JFrame {
+	
+	public static final int FRAME_SIZE = 400;
+	
+	public static void main(String[] args) {
+		TwoFrame tf = new TwoFrame();
+		//s1.setLocationRelativeTo(null);
+		tf.setSize(FRAME_SIZE, FRAME_SIZE);
+		tf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		tf.setTitle("Bank Balance");
+		
+		
+		JButton button1 = new JButton("Add Interest");
+		JPanel panel1 = new JPanel();
+		JLabel label1 = new JLabel();
+		label1.setText(Double.toString(TestFrame.STARTING_BALANCE));
+		TestFrame.l = label1;
+		class MyListener implements ActionListener
+		{
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				TestFrame.updateBalance(TestFrame.l);
+			}
+		};
+		
+		MyListener l = new MyListener();
+		button1.addActionListener(l);
+		
+		panel1.add(button1);
+		panel1.add(label1);
+		tf.add(panel1);
+		tf.setVisible(true);
+		
+	}
+}

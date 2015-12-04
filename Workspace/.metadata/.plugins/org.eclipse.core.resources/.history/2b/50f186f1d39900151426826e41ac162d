@@ -1,0 +1,75 @@
+package main;
+
+import java.awt.Button;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JFrame;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+@SuppressWarnings("serial")
+public class FontViewer extends JFrame 
+{
+
+	public static final int SIZE_SMALL = 24;
+	public static final int SIZE_MEDIUM = 36;
+	public static final int SIZE_LARGE = 48;
+	
+	public static void main(String[] args) 
+	{
+		JFrame frame = new JFrame();
+		frame.setBounds(50, 50, 300, 300);
+		frame.setAlwaysOnTop(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setResizable(false);
+		frame.setTitle("Layout test"); 
+		
+		// make radio buttons 
+		JRadioButton smallButton = new JRadioButton("Small"), mediumButton = new JRadioButton("Medium"), largeButton = new JRadioButton("Large");
+		JRadioButton[] buttonRay = new JRadioButton[]{smallButton, mediumButton, largeButton}; 
+		ButtonGroup group = new ButtonGroup();
+		for (JRadioButton b : buttonRay) {
+			group.add(b);
+		}
+		final JTextField display = new JTextField(); // MUST BE FINAL FOR THE INNER CLASS TO USE IT
+		display.setEditable(false);
+		
+		class ButtonListener implements ActionListener{
+
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				Button temp = (Button) e.getSource();
+				display.setText(temp.getLabel());
+			}
+			
+		}
+		
+		ButtonListener bl = new ButtonListener();
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		frame.setVisible(true);
+	}
+	
+	
+} // end of class

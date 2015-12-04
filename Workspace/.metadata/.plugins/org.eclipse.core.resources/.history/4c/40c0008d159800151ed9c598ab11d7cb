@@ -1,0 +1,14 @@
+package gui;
+
+import javax.swing.JFrame;
+
+public class ShoppingBasketFrame extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1136717941919517633L;
+	
+	public static long getSeriealVersionUID(){return ShoppingBasketFrame.serialVersionUID;}
+
+}

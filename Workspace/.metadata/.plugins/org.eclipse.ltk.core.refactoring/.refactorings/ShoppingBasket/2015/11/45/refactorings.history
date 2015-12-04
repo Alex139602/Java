@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;panel&apos; in &apos;gui.ShoppingBasketFrame.ShoppingBasketFrame()&apos; to &apos;shoppingPanel&apos;&#x0A;- Original project: &apos;ShoppingBasket&apos;&#x0A;- Original element: &apos;gui.ShoppingBasketFrame.ShoppingBasketFrame().panel&apos;&#x0A;- Renamed element: &apos;panel&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;panel&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;gui{ShoppingBasketFrame.java[ShoppingBasketFrame~ShoppingBasketFrame@panel!514!541!521!525!QJPanel;!0!false" name="shoppingPanel" references="true" stamp="1446487519306" version="1.0"/>
+</session>
