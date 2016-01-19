@@ -1,7 +1,0 @@
-package main;
-
-import javax.swing.JFrame;
-
-public class FontViewer2Frame extends JFrame {
-
-}

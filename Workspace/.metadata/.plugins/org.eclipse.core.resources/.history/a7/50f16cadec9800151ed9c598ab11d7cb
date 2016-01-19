@@ -1,7 +1,0 @@
-package gui;
-
-import java.awt.JFrame;
-
-public class TestFrame extends JFrame {
-
-}

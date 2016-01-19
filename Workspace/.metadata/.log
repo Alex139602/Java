@@ -3505,3 +3505,1307 @@ Caused by: java.lang.IllegalArgumentException: assertion failed.
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2015-12-08 09:46:34.248 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/administrator/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/administrator/.eclipse_keyring -showlocation
+
+!ENTRY oracle.eclipse.tools.common 4 0 2015-12-08 09:46:37.434
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.common [916]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-12-08 09:46:37.443
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.glassfish [917]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,10.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY oracle.eclipse.tools.glassfish.ui 4 0 2015-12-08 09:46:37.458
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.glassfish.ui [918]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.glassfish; bundle-version="[8.2.0,9.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.glassfish; bundle-version="8.2.0.201507100122"; singleton:="true"
+       oracle.eclipse.tools.glassfish [917]
+         Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,10.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+              org.eclipse.sapphire.modeling [923]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY oracle.eclipse.tools.javaee.doc.integration 4 0 2015-12-08 09:46:37.464
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.javaee.doc.integration [919]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.java 4 0 2015-12-08 09:46:37.470
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.java [920]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.java.jdt 4 0 2015-12-08 09:46:37.481
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.java.jdt [921]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.java.jdt.ui 4 0 2015-12-08 09:46:37.491
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.java.jdt.ui [922]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.modeling 4 0 2015-12-08 09:46:37.496
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.modeling [923]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.modeling.xml 4 0 2015-12-08 09:46:37.501
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.modeling.xml [924]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.osgi 4 0 2015-12-08 09:46:37.506
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.osgi [925]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.platform 4 0 2015-12-08 09:46:37.511
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.platform [927]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.ui 4 0 2015-12-08 09:46:37.516
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.ui [928]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.ui.swt.xml.editor 4 0 2015-12-08 09:46:37.520
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.ui.swt.xml.editor [929]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.workspace 4 0 2015-12-08 09:46:37.524
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.workspace [930]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.workspace.ui 4 0 2015-12-08 09:46:37.528
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.workspace.ui [931]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2015-12-08 09:46:49.899
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-12-11 14:33:32.223 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/administrator/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/administrator/.eclipse_keyring -showlocation
+
+!ENTRY oracle.eclipse.tools.common 4 0 2015-12-11 14:33:35.592
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.common [916]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-12-11 14:33:35.605
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.glassfish [917]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,10.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY oracle.eclipse.tools.glassfish.ui 4 0 2015-12-11 14:33:35.618
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.glassfish.ui [918]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.glassfish; bundle-version="[8.2.0,9.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.glassfish; bundle-version="8.2.0.201507100122"; singleton:="true"
+       oracle.eclipse.tools.glassfish [917]
+         Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,10.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+              org.eclipse.sapphire.modeling [923]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY oracle.eclipse.tools.javaee.doc.integration 4 0 2015-12-11 14:33:35.623
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.javaee.doc.integration [919]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.java 4 0 2015-12-11 14:33:35.632
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.java [920]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.java.jdt 4 0 2015-12-11 14:33:35.647
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.java.jdt [921]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.java.jdt.ui 4 0 2015-12-11 14:33:35.655
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.java.jdt.ui [922]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.modeling 4 0 2015-12-11 14:33:35.664
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.modeling [923]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.modeling.xml 4 0 2015-12-11 14:33:35.669
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.modeling.xml [924]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.osgi 4 0 2015-12-11 14:33:35.674
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.osgi [925]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.platform 4 0 2015-12-11 14:33:35.679
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.platform [927]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.ui 4 0 2015-12-11 14:33:35.686
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.ui [928]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.ui.swt.xml.editor 4 0 2015-12-11 14:33:35.689
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.ui.swt.xml.editor [929]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.workspace 4 0 2015-12-11 14:33:35.694
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.workspace [930]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.sapphire.workspace.ui 4 0 2015-12-11 14:33:35.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sapphire.workspace.ui [931]
+  Unresolved requirement: Require-Bundle: org.eclipse.sapphire.modeling; bundle-version="[9.0.0,9.0.1)"
+    -> Bundle-SymbolicName: org.eclipse.sapphire.modeling; bundle-version="9.0.0.201506110922"
+       org.eclipse.sapphire.modeling [923]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2015-12-11 14:33:47.993
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-12-12 00:32:24.800 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 00:34:02.735
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 00:34:02.867
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 00:34:02.868
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 00:34:02.868
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 00:34:02.869
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 00:34:02.874
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.osgi 4 0 2015-12-12 00:34:03.321
+!MESSAGE Application error
+!STACK 1
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:4517)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Control.createHandle(Control.java:703)
+	at org.eclipse.swt.widgets.Composite.createHandle(Composite.java:306)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:743)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:140)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:111)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.ui.splash.BasicSplashHandler.getBundleProgressMonitor(BasicSplashHandler.java:155)
+	at org.eclipse.ui.splash.BasicSplashHandler.getContent(BasicSplashHandler.java:257)
+	at org.eclipse.ui.internal.splash.EclipseSplashHandler.init(EclipseSplashHandler.java:107)
+	at org.eclipse.ui.internal.Workbench$6.run(Workbench.java:834)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.createSplashWrapper(Workbench.java:849)
+	at org.eclipse.ui.internal.Workbench.access$5(Workbench.java:771)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2015-12-12 19:24:14.369 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 19:24:26.546
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 19:24:26.594
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 19:24:26.595
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 19:24:26.597
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 19:24:26.598
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:144)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:278)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-12 19:24:26.604
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '255'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:620)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2015-12-12 19:24:40.612
+!MESSAGE Unable to create part
+
+!ENTRY org.eclipse.core.filebuffers 4 0 2015-12-12 19:24:40.643
+!MESSAGE Cannot determine URI for '/GraphicsDrawing/src/main/FontViewer2Frame.java'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/GraphicsDrawing/src/main/FontViewer2Frame.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:238)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:559)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:980)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:478)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1244)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4233)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:237)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1480)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2590)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2563)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1392)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3220)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2098)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3238)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3265)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:361)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:879)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:525)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:509)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2015-12-12 19:24:40.644
+!MESSAGE Cannot determine URI for '/GraphicsDrawing/src/main/FontViewer2Frame.java'.
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-12-12 19:25:07.240
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob

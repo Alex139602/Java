@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.Component"/>
-<fullyQualifiedTypeName name="gui.ShoppingBasketSwing"/>
-<fullyQualifiedTypeName name="main.Main"/>
-<fullyQualifiedTypeName name="java.awt.Toolkit"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="java.awt.Graphics"/>
 <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
 <fullyQualifiedTypeName name="gui.RectangleComponent"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
@@ -45,7 +39,6 @@
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
-<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="java.awt.Button"/>
 <fullyQualifiedTypeName name="ButtonListener"/>
 <fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
@@ -54,10 +47,17 @@
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="javax.swing.border.EtchedBorder"/>
 <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
-<fullyQualifiedTypeName name="javax.swing.JLabel"/>
-<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="ChoiceListener"/>
-<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
 <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="main.FontViewer2Frame"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="MenuItemListener"/>
+<fullyQualifiedTypeName name="javax.swing.JMenu"/>
+<fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
 </qualifiedTypeNameHistroy>

@@ -1,9 +1,0 @@
-package gui;
-
-import javax.swing.JComponent;
-
-public class ShapeComponent extends JComponent {
-	
-	
-
-}
